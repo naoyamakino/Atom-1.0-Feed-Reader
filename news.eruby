@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Atom 1.0 Feed Viewer</title>
+	<link href="files/stylesheet.css" media="all" rel="Stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div id="container">
+<div id="wrapper">
+	<div id="content">
+
+  <div class="section">
+	<p><%= elements.size-1 %> stories. Generated: <%= Time.now.strftime("%m/%d/%Y at %I:%M%p") %></p>  
+	<p>Feed: <a href="<%= feed["link"] %>"><%= feed["title"] %></a> </p>
+ 
+   <% for i in (1..elements.length-1) %>
+      <div class="section details">
+        <h3><a href="<%= elements[i]["link"] %>"><%= elements[i]["title"] %></a></h3>
+	<p style="color:#444;font-size:90%"><%= elements[i]["content"] %></p>
+	<p style="color:#444;font-size:90%"><%= elements[i]["summary"] %></p>
+      </div>
+    <% end %>
+    
+   </div>
+</div></div></div>
+<br /><br />
+
+
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+CMPT 470
+Naoya Makino
+nmakino@sfu.ca
+Assignment 2
+June 25
+
+URL: http://cmpt470.csil.sfu.ca/~nmakino/a2/atomReader.rb
+
+File Discription:
+atomReader.rb: the main page that asks the user for the URL of an Atom feed
+output.rb: this file takes URL and parses the XML to determine neccessary elements
+new.eruby: eruby file that creates HTML file for the output
+files/stylesheet.css: CSS file
+
+Assumptions:
+- the URL points to a valid Atom 1.0 feed, returing the page, formatted as a simple blog.
+
+Comment:
+- I cannot display a correct author's name in a corresponding entry as it only takes author's name when entry has a name. 
+  Therefore, I am not able to keep track of which entry has a name.
+- It is not able to display images.
+- I have used the css file from this website: http://www.igvita.com/2007/03/22/agile-rss-aggregator-in-ruby/
+- I modified news.eruby file from the above website to meet my needs.
+- A list of elements that I can display for each entry:
+	- title
+	- link
+	-content or summary

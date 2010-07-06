@@ -15,6 +15,8 @@ puts "<form name = 'input' action='output.rb' method 'get'>"
 puts "<p>URL: <input type='text' name='url' size='60'/></p>"
 puts "<p><input type='submit' value='View Feed' /></p>"
 puts "</form>"
+puts "<p>Sample Feeds: </br><a href = 'http://www.cs.sfu.ca/CC/470/ggbaker/assign/a2-sample.xml'>sample.xml</a>, <a href = 'http://www.cs.sfu.ca/CC/470/ggbaker/assign/a2-samples/2.xml'>sample2.xml</a></p>"
+puts "<p><a href = 'about.txt'>README</a></p>"
 puts "</body>"
 puts "</html>"
 
